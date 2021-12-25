@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { AddDrPipe } from './add-dr.pipe';
 import { EquipeComponent } from './equipe/equipe.component';
-import { HttpClientModule } from '@angular/common/http';
 import { AddEquipeComponent } from './add-equipe/add-equipe.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
@@ -22,7 +23,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

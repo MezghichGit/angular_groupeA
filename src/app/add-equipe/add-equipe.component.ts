@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-add-equipe',
@@ -11,5 +12,8 @@ export class AddEquipeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onSubmit(team: NgForm) {
+    console.log(team.value.name);  // { first: '', last: '' }
+    console.log(team.value.country);  // false
+  }
 }
