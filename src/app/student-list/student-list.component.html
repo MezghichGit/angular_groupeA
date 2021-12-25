@@ -3,12 +3,12 @@
 
 <ul>
 
-  <li *ngFor="let name of names">{{name|uppercase}}</li>
+  <li *ngFor="let name of names">{{name|uppercase|addDr}}</li>
 </ul>
 
 <h3 align="center">Liste des étudiants</h3>
 
-<table  align="center" border="1">
+<table  class="table table-striped" align="center" border="1">
 <tr><th>Nom</th><th>Age</th></tr>
 <tr *ngFor="let student of myStudents">
 
