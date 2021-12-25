@@ -1,6 +1,9 @@
-<h3> List Equipes</h3>
+<table  class="table table-striped" align="center" border="1">
+  <tr><th>ID</th><th>Name</th><th>Country</th></tr>
+  <tr *ngFor="let team of mesEquipes">
 
-<ul>
-
-  <li *ngFor="let equipe of mesEquipes">{{equipe.id}} - {{equipe.name}} - {{equipe.country}}</li>
-</ul>
+    <td>{{team.id}}</td>
+    <td>{{team.name}}</td>
+    <td>{{team.country}}</td>
+  </tr>
+  </table>
