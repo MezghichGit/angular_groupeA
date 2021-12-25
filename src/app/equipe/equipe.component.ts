@@ -7,11 +7,16 @@ import {EquipeService} from "../services/equipe.service";
 })
 export class EquipeComponent implements OnInit {
 
-  mesEquipes:string[]=[];
+  mesEquipes:any;
   constructor(private service : EquipeService) { }  // injection de dépendences
 
   ngOnInit(): void {
-    this.mesEquipes = this.service.getEquipes();
+    this.service.getEquipes().subscribe(
+
+      data =>{
+        this.mesEquipes = data;
+        console.log(data);
+    });
   }
 
 }

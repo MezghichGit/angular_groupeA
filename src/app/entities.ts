@@ -14,3 +14,5 @@ export class Etudiant {
     return this.nom + " " + this.age;
   }
 }
+
+//export
