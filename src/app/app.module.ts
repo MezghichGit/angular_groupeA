@@ -10,6 +10,7 @@ import { AddDrPipe } from './add-dr.pipe';
 import { EquipeComponent } from './equipe/equipe.component';
 import { AddEquipeComponent } from './add-equipe/add-equipe.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UpdateEquipeComponent } from './update-equipe/update-equipe.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AddDrPipe,
     EquipeComponent,
     AddEquipeComponent,
-    NavbarComponent
+    NavbarComponent,
+    UpdateEquipeComponent
   ],
   imports: [
     BrowserModule,

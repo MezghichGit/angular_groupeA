@@ -1,9 +1,11 @@
 <table  class="table table-striped" align="center" border="1">
-  <tr><th>ID</th><th>Name</th><th>Country</th></tr>
+  <tr><th>ID</th><th>Name</th><th>Country</th><th>Suppression</th><th>Modification</th></tr>
   <tr *ngFor="let team of mesEquipes">
 
-    <td>{{team.id}}</td>
+    <td>{{team._id}}</td>
     <td>{{team.name}}</td>
     <td>{{team.country}}</td>
+    <td><button (click)="deleteEquipe(team)" class="btn btn-danger">Supprimer</button></td>
+    <td><button (click)="updateEquipe(team)" class="btn btn-warning">Modifier</button></td>
   </tr>
   </table>
